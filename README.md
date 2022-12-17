@@ -35,7 +35,8 @@ Response parameter:
 * `status` - current operation status
 * `text` - recognized text from audio file
 
-After successfully uploaded audio file request saved in database, request have _INIT_ status.
+After successfully uploaded audio file request saving in database, and operation have _INIT_ status.
+
 2. __Getting recognize operation status__:
 ```http request
 GET http://localhost:8080/api/recognition.result?request_id=6
