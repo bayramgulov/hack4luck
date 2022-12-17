@@ -1,0 +1,9 @@
+package denis.bayramgulov.hack4luck.config
+
+import denis.bayramgulov.hack4luck.properties.YandexSpeechProperties
+import org.springframework.boot.context.properties.EnableConfigurationProperties
+import org.springframework.context.annotation.Configuration
+
+@Configuration
+@EnableConfigurationProperties(YandexSpeechProperties::class)
+class YandexSpeechConfig

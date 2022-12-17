@@ -1,0 +1,45 @@
+# ===============================
+# = SERVER
+# ===============================
+server:
+  port: 8080
+  forward-headers-strategy: framework
+  servlet:
+    encoding:
+      charset: UTF-8
+      force-response: true
+      force-request: true
+  shutdown: graceful
+# ===============================
+# = General Settings
+# ===============================
+spring:
+  application:
+    name: hack-4-luck
+  main:
+    banner-mode: "off"
+    web-application-type: reactive
+  lifecycle:
+    timeout-per-shutdown-phase: 1m
+  servlet.multipart:
+    max-file-size: 1GB
+    max-request-size: 1GB
+  task:
+    scheduling:
+      pool:
+        size: 4
+
+# ===============================
+# = Yandex Bucket
+# ===============================
+yandex-bucket:
+  key-id: <key-id>
+  secret-key: <secret-key>
+  url: storage.yandexcloud.net
+  region: ru-central1
+
+# ===============================
+# = Yandex Speech
+# ===============================
+yandex-speech:
+  iam: <YANDEX IAM>
