@@ -83,10 +83,11 @@ ___
 
 ### PostgreSQL
 Set environment parameters with empty database, for example:
-
-> export DB_URL=jdbc:postgresql://localhost:5432/hack_4_luck
-> export DB_USER=postgres
-> export DB_PASSWORD=postgres
+```bash
+export DB_URL=jdbc:postgresql://localhost:5432/hack_4_luck
+export DB_USER=postgres
+export DB_PASSWORD=postgres
+```
 
 Or in _DatabaseSettings_ class variables can be hardcoded, like this:
 ```kotlin
