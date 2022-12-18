@@ -16,6 +16,7 @@ class CorsConfig {
         corsConfig.allowedOrigins = listOf("http://localhost:63343")
         corsConfig.maxAge = 8000L
         corsConfig.addAllowedMethod("GET")
+        corsConfig.addAllowedMethod("POST")
         corsConfig.addAllowedHeader("Hack4Luck-Allowed")
         val source = UrlBasedCorsConfigurationSource()
         source.registerCorsConfiguration("/**", corsConfig)
