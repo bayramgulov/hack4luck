@@ -43,3 +43,7 @@ yandex-bucket:
 # ===============================
 yandex-speech:
   iam: <YANDEX IAM>
+
+logging:
+  level:
+    reactor.netty.http.client.HttpClient: DEBUG
